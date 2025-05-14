@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "Gilroy";
+  src: url("./fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "tanker";
+  src: url("./assets/fonts/Tanker-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "clashdisplay";
+  src: url("./assets/fonts/ClashDisplay-Variable.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Gilroy", sans-serif;
+}
+*::selection {
+  background: #f24545;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.box .name {
+  font-family: "clashdisplay", sans-serif;
+  font-weight: 700;
+}
+
+.div-text h1 {
+  font-family: "tanker", sans-serif;
+  font-weight: 400;
+}
+
+.main {
+  font-family: "gilroy", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  font-family: "tanker", sans-serif;
+  font-weight: 400;
+}
