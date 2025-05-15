@@ -25,6 +25,8 @@ html,
 body {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .box .name {
@@ -38,11 +40,29 @@ body {
 }
 
 .main {
-  font-family: "gilroy", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-weight: 400;
 }
 
 a {
   font-family: "tanker", sans-serif;
   font-weight: 400;
+}
+
+.skills-text {
+  font-family: "tanker", sans-serif;
+  font-weight: 400;
+}
+
+.work-text {
+  font-family: "tanker", sans-serif;
+  font-weight: 400;
+}
+
+.work  {
+  font-family: "Gilroy", sans-serif;
+}
+
+.card-text h3{
+  font-family: "clashdisplay";
 }
