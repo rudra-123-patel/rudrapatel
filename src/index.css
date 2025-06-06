@@ -20,6 +20,7 @@
 }
 *::selection {
   background: #f24545;
+  color: white;
 }
 html,
 body {

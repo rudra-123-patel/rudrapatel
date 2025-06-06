@@ -6,19 +6,34 @@ import "./assets/fonts/Tanker-Regular.ttf";
 import "./assets/fonts/ClashDisplay-Variable.ttf";
 import SkillsCard from "./Components/SkillsCard";
 import { skills } from "./Data/Skills";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import Contact from "./Components/Contact";
 
 const Hero = () => {
   motion;
   const { scrollYProgress } = useScroll();
+  gsap.registerPlugin(useGSAP, ScrollTrigger);
+
+  useGSAP(() => {
+    gsap.from(".name , .box-text", {
+      opacity: 0,
+      y: -300,
+      duration: 0.3,
+      stagger: 0.1,
+    });
+  });
+
   return (
     <>
-      <div className="min-h-screen w-full">
+      <div className="min-h-screen ">
         {/* PROGRESS BAR */}
         <motion.div
           style={{
             scaleX: scrollYProgress,
           }}
-          className="bg-[#f24545] w-full origin-left h-1.5 rounded-4xl fixed top-0 left-0"
+          className="bg-[#f24545] z-99 w-full origin-left h-1.5 rounded-4xl fixed top-0 left-0"
         ></motion.div>
 
         <div className="min-h-screen w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] ">
@@ -26,32 +41,13 @@ const Hero = () => {
           <Navbar />
 
           <div className="box">
-            <motion.div
-              initial={{ opacity: 0, y: -100 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.3,
-                type: "spring",
-                stiffness: 100,
-                delay: 0.2,
-              }}
-            >
+            <div>
               <div className="name flex text-[200px] font-['clashdisplay'] pl-16 pr-5  text-center tracking-tight">
                 RUDRA PATEL
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              className="main flex pl-16 text-5xl m-2 font-medium  font-['clashdisplay'] capitalize tracking-tight h-full w-full"
-              initial={{ opacity: 0, x: -100 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{
-                duration: 0.3,
-                stagger: true,
-                stiffness: 100,
-                delay: 0.4,
-              }}
-            >
+            <div className="box-text main flex pl-16 text-5xl m-2 font-medium  font-['clashdisplay'] capitalize tracking-tight h-full w-full">
               <div className="h-64 w-[70%] mt-16">
                 Hello, I am a{" "}
                 <span className="bg-[#f24545] pl-1 pr-2 ">Web designer</span>{" "}
@@ -67,33 +63,24 @@ const Hero = () => {
                   left: -900,
                   right: 0,
                   top: -500,
-                  bottom: 1000,
+                  bottom: 10000,
                 }}
-                className="h-[300px] w-[300px] border-2 border-solid ml-5 z-99 relative backdrop-blur-2xl"
+                className="drag-box h-[300px] w-[300px] border-2 border-solid ml-5 z-9999 relative backdrop-blur-2xl"
               >
                 <span className="absolute top-[45%] right-[25%] z-90 text-black text-lg font-bold ">
                   Drag And Have Fun
                 </span>
               </motion.div>
-            </motion.div>
+            </div>
 
             {/* SKILLS */}
             <div className="skills h-full w-full ">
               {" "}
-              <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                  duration: 0.3,
-                  stiffness: 100,
-                  delay: 0.5,
-                }}
-                className="text-8xl text-center mt-16"
-              >
+              <motion.div className="text-8xl text-center mt-16">
                 <p className="skills-text text-gray-800">Skills</p>
               </motion.div>
               <div className="w-auto ml-[25%] text-center ">
-                <motion.div className="text-center grid grid-cols-4 w-max ">
+                <motion.div className="skills-card text-center grid grid-cols-4 w-max ">
                   {skills.map((skill) => (
                     <SkillsCard
                       key={skill.title}
@@ -119,58 +106,8 @@ const Hero = () => {
               >
                 <p className="work-text text-gray-800">My Work</p>
               </motion.div>
-              <div className="grid grid-cols-2 gap-10 p-4 w-[80rem] h-full ml-30 items-center ">
-                {/* Example Work Item */}
-                <motion.div className="w-auto bg-white shadow-lg rounded-xl p-8 border border-gray-200">
-                  <h3 className="text-3xl font-bold mb-2 pl-1">
-                    Pinterest Clone
-                  </h3>
-                  <p className="text-lg text-gray-700 p-1 mb-2 capitalize">
-                    Created a Pinterest clone with Javascript and TailWindCSS
-                  </p>
-                  <a
-                    href="https://rudrapinterest.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-1 mt-4 text-2xl transition delay-100 duration-300 ease-in-out hover:text-white hover:bg-black  "
-                  >
-                    Check Project <i class="ri-arrow-right-line"></i>
-                  </a>
-                </motion.div>
-                {/* Add more work items below as needed */}
-                <motion.div className="w-auto bg-white shadow-lg rounded-xl p-8 border border-gray-200">
-                  <h3 className="text-3xl font-bold mb-2 pl-1">
-                    DeaLaptop Landing Page{" "}
-                  </h3>
-                  <p className="text-lg text-gray-700 mb-2 p-1 capitalize">
-                    Landing Page Design for DeaLaptop where you can buy laptop
-                    and accessories.
-                  </p>
-                  <a
-                    href="https://github.com/rudra-123-patel/DeaLaptop"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-1 mt-4 text-2xl transition delay-100 duration-300 ease-in-out hover:text-white hover:bg-black "
-                  >
-                    Check Project <i className="ri-arrow-right-line"></i>
-                  </a>
-                </motion.div>
-                <motion.div className="w-auto bg-white shadow-lg rounded-xl p-8 border border-gray-200">
-                  <h3 className="text-3xl font-bold p-1 mb-2">
-                    Significo Clone
-                  </h3>
-                  <p className="text-lg text-gray-700 p-1 mb-2 capitalize">
-                    Significo clone website using TailWindCSS and JavaScript.
-                  </p>
-                  <a
-                    href="https://clonesignificoo.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-1 mt-4 text-2xl transition delay-100 duration-300 ease-in-out hover:text-white hover:bg-black  "
-                  >
-                    Check Project <i class="ri-arrow-right-line"></i>
-                  </a>
-                </motion.div>{" "}
+              <div className="grid grid-cols-2 gap-10 p-4 max-w-7xl mx-50 h-full  items-center ">
+                {/*Works */}
                 <motion.div className="relative w-full max-w-md rounded-xl overflow-hidden shadow-lg border border-gray-200">
                   <img
                     src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000"
@@ -178,29 +115,181 @@ const Hero = () => {
                     className="w-full h-64 object-cover"
                   />
 
-                  <motion.div
-                   
+                  {/* TEXT OVER IMAGE */}
+                  <motion.p
+                    initial={{
+                      y: 50,
+                      opacity: 0,
+                    }}
+                    animate={{
+                      y: 0,
+                      opacity: 1,
+                    }}
                     transition={{
-                      duration: 1.3,
+                      duration: 0.3,
                     }}
-                    className="card-text flex justify-between bg-white text-black p-4"
+                    className="absolute  bottom-17 text-white text-lg text-center z-10 bg-black/50 px-2 py-1 "
                   >
-                    <h3 className="text-3xl font-bold ">DENTY CARE</h3>
+                    A responsive Design of Pinterest clone using HTML ,
+                    TailWindCSS and Javascript.
+                  </motion.p>
 
+                  <motion.div
+                    transition={{ duration: 1.3 }}
+                    className="card-text flex justify-center gap-3 bg-white hover:bg-[#f24545] hover:text-white transition delay-100 duration-150 ease-in-out text-black p-4"
+                  >
+                    <h3 className="text-3xl font-bold">PINTEREST</h3>
                     <motion.a
-                    whileHover={{
-                      rotate:-45
-                    }}
+                      whileHover={{ rotate: -45 }}
                       href="https://rudrapinterest.netlify.app/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-3xl "
+                      className="text-3xl"
                     >
-                      <i class="ri-arrow-right-line"></i>
+                      <i className="ri-arrow-right-line"></i>
+                    </motion.a>
+                  </motion.div>
+                </motion.div>
+
+                {/* 2nd */}
+
+                <motion.div className="relative w-full max-w-md rounded-xl overflow-hidden shadow-lg border border-gray-200">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000"
+                    alt="Project"
+                    className="w-full h-64 object-cover"
+                  />
+
+                  {/* TEXT OVER IMAGE */}
+                  <motion.p
+                    initial={{
+                      y: 50,
+                      opacity: 0,
+                    }}
+                    animate={{
+                      y: 0,
+                      opacity: 1,
+                    }}
+                    transition={{
+                      duration: 0.3,
+                    }}
+                    className="absolute  bottom-17 text-white text-lg text-center z-10 bg-black/50 px-2 py-1 "
+                  >
+                    A Dental Care Website Design Using HTML, CSS And JavaScript
+                  </motion.p>
+
+                  <motion.div
+                    transition={{ duration: 1.3 }}
+                    className="card-text flex  justify-center gap-3 bg-white hover:bg-[#f24545] hover:text-white transition delay-100 duration-150 ease-in-out text-black p-4"
+                  >
+                    <h3 className="text-3xl font-bold">DENTY CARE</h3>
+                    <motion.a
+                      whileHover={{ rotate: -45 }}
+                      href="https://dentycare.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-3xl"
+                    >
+                      <i className="ri-arrow-right-line"></i>
+                    </motion.a>
+                  </motion.div>
+                </motion.div>
+
+                {/* 3rd */}
+
+                <motion.div className="relative w-full max-w-md rounded-xl overflow-hidden shadow-lg border border-gray-200">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000"
+                    alt="Project"
+                    className="w-full h-64 object-cover"
+                  />
+
+                  {/* TEXT OVER IMAGE */}
+                  <motion.p
+                    initial={{
+                      y: 50,
+                      opacity: 0,
+                    }}
+                    animate={{
+                      y: 0,
+                      opacity: 1,
+                    }}
+                    transition={{
+                      duration: 0.3,
+                    }}
+                    className="absolute w-full bottom-17  text-white text-lg text-center z-10 bg-black/50 px-2 py-1 "
+                  >
+                    A CLone Of Significo Website.
+                  </motion.p>
+
+                  <motion.div
+                    transition={{ duration: 1.3 }}
+                    className="card-text  flex justify-center gap-3 bg-white hover:bg-[#f24545] hover:text-white transition delay-100 duration-150 ease-in-out text-black p-4"
+                  >
+                    <h3 className="text-3xl font-bold">SIGNIFICO</h3>
+                    <motion.a
+                      whileHover={{ rotate: -45 }}
+                      href="https://clonesignificoo.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-3xl"
+                    >
+                      <i className="ri-arrow-right-line"></i>
+                    </motion.a>
+                  </motion.div>
+                </motion.div>
+
+                {/* 4th */}
+
+                <motion.div className="relative w-full max-w-md rounded-xl overflow-hidden shadow-lg border border-gray-200">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000"
+                    alt="Project"
+                    className="w-full h-64 object-cover"
+                  />
+
+                  {/* TEXT OVER IMAGE */}
+                  <motion.p
+                    initial={{
+                      y: 50,
+                      opacity: 0,
+                    }}
+                    animate={{
+                      y: 0,
+                      opacity: 1,
+                    }}
+                    transition={{
+                      duration: 0.3,
+                    }}
+                    className="absolute  bottom-17 text-white text-lg text-center z-10 bg-black/50 px-2 py-1 "
+                  >
+                    A Design For Website Where You Can Buy Laptop And
+                    Accessories
+                  </motion.p>
+
+                  <motion.div
+                    transition={{ duration: 1.3 }}
+                    className="card-text flex justify-center gap-3 bg-white hover:bg-[#f24545] hover:text-white transition delay-100 duration-150 ease-in-out text-black p-4"
+                  >
+                    <h3 className="text-3xl font-bold">DEALAPTOP</h3>
+                    <motion.a
+                      whileHover={{ rotate: -45 }}
+                      href="https://github.com/rudra-123-patel/DeaLaptop"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-3xl"
+                    >
+                      <i className="ri-arrow-right-line"></i>
                     </motion.a>
                   </motion.div>
                 </motion.div>
               </div>
+            </div>
+
+            {/* Contact Page */}
+
+            <div className="contact mt-20 pb-20">
+              <Contact />
             </div>
           </div>
         </div>

@@ -27,7 +27,7 @@ export const skills = [
     icon: reactjs,
   },
   {
-    title: "Tailwind CSS",
+    title: "TailwindCSS",
     icon: tailwind,
   },
   {
