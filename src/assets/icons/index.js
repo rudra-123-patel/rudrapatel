@@ -1,11 +1,12 @@
-import html5 from "./html5-fill.svg";
-import css3 from "./css3-fill.svg";
-import javascript from "./javascript-fill.svg";
-import reactjs from "./reactjs-line.svg";
-import tailwind from "./tailwind-css-fill.svg";
-import bootstrap from "./bootstrap-fill.svg";
-import github from "./github-fill.svg";
-import vercel from "./Vercel.svg";
+import html5 from "./html.png";
+import css3 from "./CSS3.png";
+import javascript from "./javascript.png";
+import reactjs from "./react.png";
+import tailwind from "./tailwind.png";
+import bootstrap from "./Boostrap.png";
+import github from "./github.png";
+import node from "./nodejs.png";
+import netlify from "./netlify.png";
 
 export {
   html5,
@@ -15,5 +16,6 @@ export {
   tailwind,
   bootstrap,
   github,
-  vercel,
+  netlify,
+  node,
 };

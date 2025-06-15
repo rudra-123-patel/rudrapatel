@@ -6,7 +6,8 @@ import {
   tailwind,
   bootstrap,
   github,
-  vercel,
+  node,
+  netlify,
 } from "../assets/icons";
 
 export const skills = [
@@ -39,7 +40,11 @@ export const skills = [
     icon: github,
   },
   {
-    title: "Vercel",
-    icon: vercel,
+    title: "NodeJS",
+    icon: node,
+  },
+  {
+    title: "Netlify",
+    icon: netlify,
   },
 ];

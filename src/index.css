@@ -14,9 +14,118 @@
   src: url("./assets/fonts/ClashDisplay-Variable.ttf") format("truetype");
 }
 
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Gilroy", sans-serif;
+  scroll-behavior: smooth;
 }
 *::selection {
   background: #f24545;
@@ -30,9 +139,17 @@ body {
   padding: 0;
 }
 
-.box .name {
-  font-family: "clashdisplay", sans-serif;
+.main .name {
+  font-family: "tanker", sans-serif;
   font-weight: 700;
+}
+
+.name-text {
+  font-family: "tanker", sans-serif;
+}
+
+.box-text {
+  font-family: "tanker", sans-serif;
 }
 
 .div-text h1 {
@@ -40,12 +157,7 @@ body {
   font-weight: 400;
 }
 
-.main {
-  font-family: "Gilroy", sans-serif;
-  font-weight: 400;
-}
-
-a {
+.navbar a {
   font-family: "tanker", sans-serif;
   font-weight: 400;
 }
@@ -60,10 +172,10 @@ a {
   font-weight: 400;
 }
 
-.work  {
+.work {
   font-family: "Gilroy", sans-serif;
 }
 
-.card-text h3{
+.card-text h3 {
   font-family: "clashdisplay";
 }
