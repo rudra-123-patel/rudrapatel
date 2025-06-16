@@ -4,7 +4,7 @@ const About = () => {
   motion;
   return (
     <>
-      <div className="pl-10 sm:pl-32 pt-44 pr-32">
+      <div className="pl-4 sm:pl-32 pr-4 pt-44 sm:pr-32">
         <div className="grid lg:grid-cols-2 gap-24 w-full h-auto">
           <motion.div
             initial={{ x: -50, opacity: 0 }}
@@ -21,7 +21,7 @@ const About = () => {
               <span className="font-semibold text-transparent bg-gradient-to-b from-[#ff6464] to-[#e61e1e] bg-clip-text">
                 Rudra Patel
               </span>{" "}
-              — a frontend explorer with a passion for turning wild ideas into
+               a frontend explorer with a passion for turning wild ideas into
               smooth, interactive experiences.
               <div className="mb-2" />
               When I’m not wrestling with code, I’m probably fine-tuning UI
@@ -60,8 +60,8 @@ const About = () => {
                 Education
               </div>
 
-              <div className=" text-gray-200 p-6">
-                <div className="flex flex-col ml-6 relative">
+              <div className=" text-gray-200 pt-6 ">
+                <div className="flex flex-col ml-2 sm:ml-6 relative">
                   {/* Bachelor's */}
                   <div className="mb-14 relative">
                     <motion.span
@@ -72,7 +72,7 @@ const About = () => {
                       s
                       className="absolute left-[-50px] top-4 transform -translate-y-1/2  bg-gradient-to-b text-transparent from-[#ff6464] to-[#e61e1e] bg-clip-text "
                     >
-                      <span className="text-4xl">
+                      <span className="text-4xl hidden sm:inline-block">
                         <i className="ri-arrow-right-double-fill"></i>
                       </span>
                     </motion.span>
@@ -91,10 +91,10 @@ const About = () => {
                         </span>
                       </div>
                       <p className="text-gray-400">
-                        Pursuing my BTech with a strong focus on web development,
-                        programming, and computer fundamentals. Gained hands-on
-                        experience in React.js, TailWindCSS, JavaScript and software
-                        development.
+                        Pursuing my BTech with a strong focus on web
+                        development, programming, and computer fundamentals.
+                        Gained hands-on experience in React.js, TailWindCSS,
+                        JavaScript and software development.
                       </p>
                     </div>
                   </div>
@@ -108,7 +108,7 @@ const About = () => {
                       viewport={{ once: true }}
                       className="absolute left-[-50px] top-4 transform -translate-y-1/2  bg-gradient-to-b text-transparent from-[#ff6464] to-[#e61e1e] bg-clip-text "
                     >
-                      <span className="text-4xl">
+                      <span className="text-4xl hidden sm:inline-block">
                         <i className="ri-arrow-right-double-fill"></i>
                       </span>
                     </motion.span>
@@ -142,7 +142,7 @@ const About = () => {
                       viewport={{ once: true }}
                       className="absolute left-[-50px] top-4 transform -translate-y-1/2  bg-gradient-to-b text-transparent from-[#ff6464] to-[#e61e1e] bg-clip-text "
                     >
-                      <span className="text-4xl">
+                      <span className="text-4xl hidden sm:inline-block">
                         <i className="ri-arrow-right-double-fill"></i>
                       </span>
                     </motion.span>

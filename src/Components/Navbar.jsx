@@ -10,14 +10,14 @@ const navLinks = [
 
 const Navbar = () => {
   motion;
- 
+
   return (
     <>
       <motion.div
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.3 }}
-        className="navbar fixed top-0 left-0 w-full sm:w-full z-50 flex px-7 py-6 justify-between items-center backdrop-blur-sm"
+        className="navbar fixed top-0 left-0 w-full sm:w-full  z-50 flex px-7 py-6 justify-between items-center backdrop-blur-sm"
         style={{ WebkitBackdropFilter: "blur(12px)" }}
       >
         <motion.div
@@ -53,22 +53,16 @@ const Navbar = () => {
             ))}
           </ul>
         </nav>
-      
       </motion.div>
       {/* Mobile Nav */}
-    
-        <motion.div
-          initial={{ x: "100%" }}
-          animate={{ x: 0 }}
-          exit={{ x: "100%" }}
-          transition={{ duration: 0.3 }}
-          className="fixed top-0 right-0 h-full bg-[#181818] z-50 flex flex-col items-center pt-24 sm:hidden"
-        >
-            
 
-            
-        </motion.div>
-      
+      <motion.div
+        initial={{ x: "100%" }}
+        animate={{ x: 0 }}
+        exit={{ x: "100%" }}
+        transition={{ duration: 0.3 }}
+        className="fixed top-0 right-0 h-full bg-[#181818] z-50 flex flex-col items-center pt-24 sm:hidden"
+      ></motion.div>
     </>
   );
 };

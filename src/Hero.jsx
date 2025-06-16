@@ -64,13 +64,13 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
             id="skills"
-            className="skills min-h-screen w-full pl-10 sm:pl-32 md:pt-36"
+            className="skills min-h-screen w-full pl-6 sm:pl-32 pt-44 pr-4 sm:pr-32"
           >
             <div className="about-headtext underline decoration-red-600 underline-offset-6 text-gray-300 font-semibold text-[20px] uppercase tracking-[3.2px] pb-4">
               Key Skills
             </div>
             <div className="skills-left w-auto text-center">
-              <motion.div className="skills-card text-center sm:pl-20 grid grid-cols-2 sm:grid-cols-3">
+              <motion.div className="skills-card text-center sm:pl-4 grid grid-cols-2 sm:grid-cols-3 gap-x-6">
                 {skills.map((skill) => (
                   <SkillsCard
                     key={skill.title}
