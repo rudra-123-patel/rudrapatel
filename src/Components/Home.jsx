@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <div className="home-main ">
-        <div className="name mt-36 mb-12 sm:mt-16">
+        <div className="name mt-32 mb-12 sm:mt-16">
           <div className="sm:pl-16 sm:pr-5 text-center text-white sm:tracking-tight">
             <div className="name-text block text-6xl sm:text-[100px] font-light mb-5 ">
               Hi I'm
