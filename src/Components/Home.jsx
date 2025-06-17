@@ -4,7 +4,7 @@ const Home = () => {
   motion;
   return (
     <>
-      <div className="home-main pt-6 ml-2 ">
+      <div className="home-main pt-6 ml-2 mt-10">
         <div className="name mt-20 mb-12 sm:mt-20">
           <div className="sm:pl-16 sm:pr-5 text-center text-white sm:tracking-tight">
             <div className="name-text block text-6xl sm:text-[100px] font-light mb-5 ">
