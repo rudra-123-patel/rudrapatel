@@ -13,70 +13,139 @@ const Work = () => {
         <div className="work-headtext underline decoration-red-600 underline-offset-6 text-gray-300 font-semibold text-[20px] uppercase tracking-[3.2px] pb-4">
           My Work
         </div>
-        <div className="w-full text-center text-white">
+        <div className="w-full text-center pt-10 text-white">
           <div className="work-card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-8">
             {/* Card 1 */}
-            <div className="work-item bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl font-semibold mb-2">Project Title</h3>
-              <p className="text-gray-400 mb-4">
-                A brief description of the project goes here. Highlight key
-                features and technologies used.
-              </p>
-              <a href="#" className="text-blue-500 hover:underline">
-                View Project
-              </a>
-              <div className="work-techs text-gray-500 text-sm mt-2">
-                <span className="work-tech">React </span>
-                <span className="work-tech">JavaScript </span>
-                <span className="work-tech">CSS </span>
+            <div className="work-item text-left bg-black border border-gray-900  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+              <div>
+                <a
+                  href="https://rudrapateldev.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="w-full h-48 mb-4 rounded-lg">
+                    <img
+                      src="image/portfolio.png"
+                      className="w-full h-full object-fill rounded-lg hover:scale-105 transition-transform duration-300"
+                      alt="portfolio"
+                      style={{ display: "block" }}
+                    />
+                  </div>
+                  <div className="p-4 ">
+                    <h3 className="text-xl font-semibold mb-2">
+                      Personal Portfolio
+                    </h3>
+                    <p className="text-gray-300 mb-4">
+                      Personal portfolio to showcase projects and skills.
+                      Responsive and visually appealing.
+                    </p>
+
+                    <div className="work-techs text-gray-500 text-sm mt-2">
+                      <span className="work-tech">React </span>
+                      <span className="work-tech">Framer Motion </span>
+                      <span className="work-tech">TailWindCSS </span>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
             {/* Card 2 */}
-            <div className="work-item bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl font-semibold mb-2">E-Commerce App</h3>
-              <p className="text-gray-400 mb-4">
-                An online store with product listings, cart, and checkout. Built
-                for seamless shopping experience.
-              </p>
-              <a href="#" className="text-blue-500 hover:underline">
-                View Project
-              </a>
-              <div className="work-techs text-gray-500 text-sm mt-2">
-                <span className="work-tech">Next.js </span>
-                <span className="work-tech">TypeScript </span>
-                <span className="work-tech">TailwindCSS </span>
+            <div className="work-item text-left bg-black border border-gray-900  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+              <div>
+                <a
+                  href="https://dentycare.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="w-full h-48 mb-4 rounded-lg">
+                    <img
+                      src="/image/dentycare.png"
+                      className="w-full h-full object-fill rounded-lg hover:scale-105 transition-transform duration-300"
+                      alt="dentalcare"
+                      style={{ display: "block" }}
+                    />
+                  </div>
+                  <div className="p-4 ">
+                    <h3 className="text-xl font-semibold mb-2">DentyCare</h3>
+                    <p className="text-gray-300 mb-4">
+                      DentyCare a design for a dental clinic website. Created
+                      just using HTML and CSS.
+                    </p>
+
+                    <div className="work-techs text-gray-500 text-sm mt-2">
+                      <span className="work-tech">HTML </span>
+                      <span className="work-tech">CSS </span>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
-            {/* Card 3 */}
-            <div className="work-item bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl font-semibold mb-2">Portfolio Website</h3>
-              <p className="text-gray-400 mb-4">
-                Personal portfolio to showcase projects and skills. Responsive
-                and visually appealing.
-              </p>
-              <a href="#" className="text-blue-500 hover:underline">
-                View Project
-              </a>
-              <div className="work-techs text-gray-500 text-sm mt-2">
-                <span className="work-tech">React </span>
-                <span className="work-tech">Framer Motion </span>
-                <span className="work-tech">SCSS </span>
+            {/*  Card 3 */}
+            <div className="work-item text-left bg-black border border-gray-900  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+              <div>
+                <a
+                  href="https://rudrapateldev.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="w-full h-48 mb-4 rounded-lg">
+                    <img
+                      src="image/portfolio.png"
+                      className="w-full h-full object-fill rounded-lg hover:scale-105 transition-transform duration-300"
+                      alt="portfolio"
+                      style={{ display: "block" }}
+                    />
+                  </div>
+                  <div className="p-4 ">
+                    <h3 className="text-xl font-semibold mb-2">
+                      Personal Portfolio
+                    </h3>
+                    <p className="text-gray-300 mb-4">
+                      Personal portfolio to showcase projects and skills.
+                      Responsive and visually appealing.
+                    </p>
+
+                    <div className="work-techs text-gray-500 text-sm mt-2">
+                      <span className="work-tech">React </span>
+                      <span className="work-tech">Framer Motion </span>
+                      <span className="work-tech">TailWindCSS </span>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
             {/* Card 4 */}
-            <div className="work-item bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl font-semibold mb-2">Blog Platform</h3>
-              <p className="text-gray-400 mb-4">
-                A full-featured blog platform with markdown support and user
-                authentication.
-              </p>
-              <a href="#" className="text-blue-500 hover:underline">
-                View Project
-              </a>
-              <div className="work-techs text-gray-500 text-sm mt-2">
-                <span className="work-tech">Node.js </span>
-                <span className="work-tech">Express </span>
-                <span className="work-tech">MongoDB </span>
+            <div className="work-item text-left bg-black border border-gray-900  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+              <div>
+                <a
+                  href="https://rudrapateldev.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="w-full h-48 mb-4 rounded-lg">
+                    <img
+                      src="image/portfolio.png"
+                      className="w-full h-full object-fill rounded-lg hover:scale-105 transition-transform duration-300"
+                      alt="portfolio"
+                      style={{ display: "block" }}
+                    />
+                  </div>
+                  <div className="p-4 ">
+                    <h3 className="text-xl font-semibold mb-2">
+                      Personal Portfolio
+                    </h3>
+                    <p className="text-gray-300 mb-4">
+                      Personal portfolio to showcase projects and skills.
+                      Responsive and visually appealing.
+                    </p>
+
+                    <div className="work-techs text-gray-500 text-sm mt-2">
+                      <span className="work-tech">React </span>
+                      <span className="work-tech">Framer Motion </span>
+                      <span className="work-tech">TailWindCSS </span>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>

@@ -70,7 +70,7 @@ const Hero = () => {
               Key Skills
             </div>
             <div className="skills-left w-auto text-center">
-              <motion.div className="skills-card text-center sm:pl-4 grid grid-cols-2 sm:grid-cols-3 gap-x-6">
+              <motion.div className="skills-card text-center sm:pl-4 md:pl-16 grid grid-cols-2 sm:grid-cols-3 gap-x-6">
                 {skills.map((skill) => (
                   <SkillsCard
                     key={skill.title}

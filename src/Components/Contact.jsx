@@ -14,14 +14,15 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Form submitted:", formData);
-    // Add your form submission logic here
+    alert(
+      `Form submitted:\nName: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`
+    );
     setFormData({ name: "", email: "", message: "" });
   };
 
   return (
     <>
-      <div className="contain-content h-full w-full pl-4 pr-4 sm:pl-32 sm:pr-32 pt-8 sm:pt-36">
+      <div className="contain-content h-full w-full pl-4 pr-4 sm:pl-32 sm:pr-32 pt-8 sm:pt-30">
         <div className="cont-headtext underline decoration-red-600 underline-offset-6 text-gray-300 font-semibold text-[20px] uppercase pb-4">
           Get In Touch
         </div>
@@ -36,7 +37,7 @@ const Contact = () => {
               Connect with me
               <div className="flex mt-4 justify-center sm:justify-start">
                 <a
-                  className="border hover:border-red-500 hover:border-2 rounded-lg text-center py-3 px-4 mr-4 "
+                  className="border hover:border-red-500   rounded-lg text-center py-3 px-4 mr-4 "
                   href="https://www.linkedin.com/in/rudra-patel-a1914a234/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -44,7 +45,15 @@ const Contact = () => {
                   <i class="ri-linkedin-box-fill"></i>
                 </a>
                 <a
-                  className="border hover:border-red-500 hover:border-2 rounded-lg text-center py-3 px-4 mr-4 "
+                  className="border hover:border-red-500  rounded-lg text-center py-3 px-4 mr-4 "
+                  href="https://github.com/rudra-123-patel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="ri-github-line"></i>
+                </a>
+                <a
+                  className="border hover:border-red-500 rounded-lg text-center py-3 px-4 mr-4 "
                   href="https://www.linkedin.com/in/rudra-patel-a1914a234/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -52,15 +61,7 @@ const Contact = () => {
                   <i className="ri-linkedin-line"></i>
                 </a>
                 <a
-                  className="border hover:border-red-500 hover:border-2 rounded-lg text-center py-3 px-4 mr-4 "
-                  href="https://www.linkedin.com/in/rudra-patel-a1914a234/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="ri-linkedin-line"></i>
-                </a>
-                <a
-                  className="border hover:border-red-500 hover:border-2 rounded-lg text-center py-3 px-4 "
+                  className="border hover:border-red-500 rounded-lg text-center py-3 px-4 "
                   href="https://www.linkedin.com/in/rudra-patel-a1914a234/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -111,7 +112,7 @@ const Contact = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-[#fb5a5a] font-bold text-white py-2 px-4 rounded-md hover:bg-[#f24545] cursor-pointer transition-colors duration-300"
+                  className="w-full bg-[#ff6060]  font-bold text-white py-2 px-4 rounded-md hover:bg-[#ff3131] cursor-pointer transition-colors duration-300"
                 >
                   Send Message
                 </button>
