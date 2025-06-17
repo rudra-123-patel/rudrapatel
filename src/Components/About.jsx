@@ -21,7 +21,8 @@ const About = () => {
               <span className="font-semibold text-transparent bg-gradient-to-b from-[#ff6464] to-[#e61e1e] bg-clip-text">
                 Rudra Patel
               </span>{" "}
-              a frontend explorer with a passion for turning wild ideas into smooth, interactive experiences.
+              a frontend explorer with a passion for turning wild ideas into
+              smooth, interactive experiences.
               <div className="mb-2" />
               When I’m not wrestling with code, I’m probably fine tuning UI
               details or wondering if I really need that 38th tab open. Using{" "}
@@ -30,8 +31,7 @@ const About = () => {
               </span> and{" "}
               <span className="font-semibold text-blue-300">TailwindCSS</span>{" "}
               as my trusty tools, I love crafting fast, flexible, and stylish
-              websites the kind that make you say, “Whoa, this actually
-              works.”
+              websites the kind that make you say, “Whoa, this actually works.”
               <div className="mb-4" />
               Let’s collaborate, innovate, and bring your next digital
               masterpiece to life — bugs and all.
@@ -49,7 +49,7 @@ const About = () => {
           </motion.div>
           <div className="about-right">
             <motion.div
-              initial={{ x: 50, opacity: 0 }}
+              initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
