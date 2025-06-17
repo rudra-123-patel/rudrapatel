@@ -4,8 +4,8 @@ const Home = () => {
   motion;
   return (
     <>
-      <div className="home-main ">
-        <div className="name mt-24 mb-12 sm:mt-20">
+      <div className="home-main ml-2 ">
+        <div className="name mt-20  mb-12 sm:mt-20">
           <div className="sm:pl-16 sm:pr-5 text-center text-white sm:tracking-tight">
             <div className="name-text block text-6xl sm:text-[100px] font-light mb-5 ">
               Hi I'm
