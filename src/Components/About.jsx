@@ -21,17 +21,16 @@ const About = () => {
               <span className="font-semibold text-transparent bg-gradient-to-b from-[#ff6464] to-[#e61e1e] bg-clip-text">
                 Rudra Patel
               </span>{" "}
-               a frontend explorer with a passion for turning wild ideas into
-              smooth, interactive experiences.
+              a frontend explorer with a passion for turning wild ideas into smooth, interactive experiences.
               <div className="mb-2" />
-              When I’m not wrestling with code, I’m probably fine-tuning UI
+              When I’m not wrestling with code, I’m probably fine tuning UI
               details or wondering if I really need that 38th tab open. Using{" "}
               <span className="font-semibold text-blue-300">
                 React
               </span> and{" "}
               <span className="font-semibold text-blue-300">TailwindCSS</span>{" "}
               as my trusty tools, I love crafting fast, flexible, and stylish
-              websites — the kind that make you say, “Whoa, this actually
+              websites the kind that make you say, “Whoa, this actually
               works.”
               <div className="mb-4" />
               Let’s collaborate, innovate, and bring your next digital
