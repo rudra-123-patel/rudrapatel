@@ -23,7 +23,7 @@ const Work = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="w-full h-48 mb-4 rounded-lg">
+                  <div className="w-full h-52 mb-4 rounded-lg">
                     <img
                       src="image/portfolio.png"
                       className="w-full h-full object-fill rounded-lg hover:scale-105 transition-transform duration-300"
@@ -57,7 +57,7 @@ const Work = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="w-full h-48 mb-4 rounded-lg">
+                  <div className="w-full h-52 mb-4 rounded-lg">
                     <img
                       src="/image/dentycare.png"
                       className="w-full h-full object-fill rounded-lg hover:scale-105 transition-transform duration-300"
@@ -88,7 +88,7 @@ const Work = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="w-full h-48 mb-4 rounded-lg">
+                  <div className="w-full h-52 mb-4 rounded-lg">
                     <img
                       src="image/portfolio.png"
                       className="w-full h-full object-fill rounded-lg hover:scale-105 transition-transform duration-300"
@@ -122,7 +122,7 @@ const Work = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="w-full h-48 mb-4 rounded-lg">
+                  <div className="w-full h-52 mb-4 rounded-lg">
                     <img
                       src="image/portfolio.png"
                       className="w-full h-full object-fill rounded-lg hover:scale-105 transition-transform duration-300"
