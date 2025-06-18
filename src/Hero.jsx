@@ -51,12 +51,18 @@ const Hero = () => {
           <div id="home" className="home">
             <Home />
           </div>
-
+          {/* Scroll to Top Button */}
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="fixed text-xl bottom-8 right-8 z-50 border-2 hover:border-red-500 text-white px-4 py-2 rounded-full  transition"
+            aria-label="Scroll to top"
+          >
+            <div>↑</div>
+          </button>
           {/* About */}
           <div id="about" className="about h-full">
             <About />
           </div>
-
           {/* SKILLS */}
           <motion.div
             initial={{ x: -50, opacity: 0 }}
@@ -81,12 +87,10 @@ const Hero = () => {
               </motion.div>
             </div>
           </motion.div>
-
           {/* Work */}
           <div id="work" className="work h-full w-full">
             <Work />
           </div>
-
           {/* Contact */}
           <div id="contact" className="contact mt-20 pb-20">
             <Contact />
