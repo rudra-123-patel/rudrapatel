@@ -82,12 +82,12 @@ const Navbar = () => {
       {isOpen && (
         <motion.div
           initial={{ x: "100%" }}
-          animate={{ x: 0 }}
+          animate={{ x: 0  }}
           exit={{ x: "100%" }}
           transition={{ duration: 0.3 }}
-          className="fixed top-0 right-0 h-full w-32 bg-[#f24545] z-40 flex flex-col items-center pt-24 sm:hidden"
+          className="fixed  right-0 h-full w-full bg-[#f24545] z-40 flex flex-col items-center justify-around sm:hidden"
         >
-          <ul className="flex flex-col text-center gap-6">
+          <ul className="flex flex-col text-center gap-8">
             {navLinks.map((link, idx) => (
               <motion.li
                 key={link.name}
@@ -98,7 +98,7 @@ const Navbar = () => {
                 <a
                   onClick={() => setIsOpen(false)}
                   href={link.href}
-                  className="text-2xl text-gray-200 hover:text-[black] transition-colors duration-200"
+                  className="text-4xl text-gray-200 hover:text-[black] transition-colors duration-200"
                 >
                   {link.name}
                 </a>
