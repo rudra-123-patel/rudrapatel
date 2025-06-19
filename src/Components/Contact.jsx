@@ -18,14 +18,14 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID, // Replace with your actual service ID
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // Replace with your actual template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           name: formData.name,
           email: formData.email,
           message: formData.message,
         },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY // Replace with your EmailJS public key
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         (response) => {
@@ -132,6 +132,8 @@ const Contact = () => {
                 </div>
                 <button
                   type="submit"
+                  onTouchStart={() => alert("Touched")}
+                  onClick={() => alert("Clicked")}
                   className="w-full bg-[#ff6060]  font-bold text-white py-2 px-4 rounded-md hover:bg-[#ff3131] cursor-pointer transition-colors duration-300"
                 >
                   Send Message
