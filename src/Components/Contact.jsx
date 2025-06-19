@@ -132,8 +132,6 @@ const Contact = () => {
                 </div>
                 <button
                   type="submit"
-                  onTouchStart={() => alert("Touched")}
-                  onClick={() => alert("Clicked")}
                   className="w-full bg-[#ff6060]  font-bold text-white py-2 px-4 rounded-md hover:bg-[#ff3131] cursor-pointer transition-colors duration-300"
                 >
                   Send Message
