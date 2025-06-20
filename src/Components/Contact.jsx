@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import { motion } from "framer-motion";
 
 const Contact = () => {
+  motion;
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -42,7 +45,13 @@ const Contact = () => {
 
   return (
     <>
-      <div className="contain-content h-full w-full pl-4 pr-4 sm:pl-32 sm:pr-32 pt-8 sm:pt-30">
+      <motion.div
+        initial={{ x: -50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        viewport={{ once: true }}
+        className="contain-content h-full w-full pl-4 pr-4 sm:pl-32 sm:pr-32 pt-8 sm:pt-30"
+      >
         <div className="cont-headtext underline decoration-red-600 underline-offset-6 text-gray-300 font-semibold text-[20px] uppercase pb-4">
           Get In Touch
         </div>
@@ -140,7 +149,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
