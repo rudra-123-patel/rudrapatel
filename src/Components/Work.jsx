@@ -84,38 +84,34 @@ const Work = () => {
             <div className="work-item text-left bg-black border border-gray-900  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
               <div>
                 <a
-                  href="https://rudrapateldev.netlify.app/"
+                  href="https://github.com/rudra-123-patel/pu-crowdfunding"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <div className="w-full h-52 mb-4 rounded-lg">
                     <img
-                      src="image/portfolio.png"
+                      src="image/crowdfunding.jpg"
                       className="w-full h-full object-fill rounded-lg hover:scale-105 transition-transform duration-300"
                       alt="portfolio"
                       style={{ display: "block" }}
                     />
                   </div>
                   <div className="p-4 ">
-                    <h3 className="text-xl font-semibold mb-2">
-                      Personal Portfolio
-                    </h3>
+                    <h3 className="text-xl font-semibold mb-2">CrowdFunding</h3>
                     <p className="text-gray-300 mb-4">
-                      Personal portfolio to showcase projects and skills.
-                      Responsive and visually appealing.
+                      A group project of college, Worked as a FrontEnd
+                      Developer.
                     </p>
 
                     <div className="work-techs text-gray-500 text-sm mt-2">
-                      <span className="work-tech">React </span>
-                      <span className="work-tech">Framer Motion </span>
-                      <span className="work-tech">TailWindCSS </span>
+                      <span className="work-tech">MERN Stack</span>
                     </div>
                   </div>
                 </a>
               </div>
             </div>
             {/* Card 4 */}
-            <div className="work-item text-left bg-black border border-gray-900  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+            {/* <div className="work-item text-left bg-black border border-gray-900  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
               <div>
                 <a
                   href="https://rudrapateldev.netlify.app/"
@@ -147,7 +143,7 @@ const Work = () => {
                   </div>
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </motion.div>
